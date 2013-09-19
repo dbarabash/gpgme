@@ -1,0 +1,403 @@
+ /bin/bash ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating tests/Makefile
+config.status: creating tests/gpg/Makefile
+config.status: creating tests/gpgsm/Makefile
+config.status: creating tests/opassuan/Makefile
+config.status: creating doc/Makefile
+config.status: creating src/versioninfo.rc
+config.status: creating src/gpgme.h
+config.status: creating src/gpgme-config
+config.status: creating lang/Makefile
+config.status: creating lang/cl/Makefile
+config.status: creating lang/cl/gpgme.asd
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make  all-recursive
+make[1]: Entering directory `/home/dmitriy/Documents/work/gpgme-1.4.3'
+Making all in src
+make[2]: Entering directory `/home/dmitriy/Documents/work/gpgme-1.4.3/src'
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT conversion.lo -MD -MP -MF .deps/conversion.Tpo -c -o conversion.lo conversion.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT conversion.lo -MD -MP -MF .deps/conversion.Tpo -c conversion.c -o conversion.o
+mv -f .deps/conversion.Tpo .deps/conversion.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT get-env.lo -MD -MP -MF .deps/get-env.Tpo -c -o get-env.lo get-env.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT get-env.lo -MD -MP -MF .deps/get-env.Tpo -c get-env.c -o get-env.o
+mv -f .deps/get-env.Tpo .deps/get-env.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT data.lo -MD -MP -MF .deps/data.Tpo -c -o data.lo data.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT data.lo -MD -MP -MF .deps/data.Tpo -c data.c -o data.o
+mv -f .deps/data.Tpo .deps/data.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT data-fd.lo -MD -MP -MF .deps/data-fd.Tpo -c -o data-fd.lo data-fd.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT data-fd.lo -MD -MP -MF .deps/data-fd.Tpo -c data-fd.c -o data-fd.o
+mv -f .deps/data-fd.Tpo .deps/data-fd.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT data-stream.lo -MD -MP -MF .deps/data-stream.Tpo -c -o data-stream.lo data-stream.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT data-stream.lo -MD -MP -MF .deps/data-stream.Tpo -c data-stream.c -o data-stream.o
+mv -f .deps/data-stream.Tpo .deps/data-stream.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT data-mem.lo -MD -MP -MF .deps/data-mem.Tpo -c -o data-mem.lo data-mem.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT data-mem.lo -MD -MP -MF .deps/data-mem.Tpo -c data-mem.c -o data-mem.o
+mv -f .deps/data-mem.Tpo .deps/data-mem.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT data-user.lo -MD -MP -MF .deps/data-user.Tpo -c -o data-user.lo data-user.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT data-user.lo -MD -MP -MF .deps/data-user.Tpo -c data-user.c -o data-user.o
+mv -f .deps/data-user.Tpo .deps/data-user.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT data-compat.lo -MD -MP -MF .deps/data-compat.Tpo -c -o data-compat.lo data-compat.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT data-compat.lo -MD -MP -MF .deps/data-compat.Tpo -c data-compat.c -o data-compat.o
+mv -f .deps/data-compat.Tpo .deps/data-compat.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT data-identify.lo -MD -MP -MF .deps/data-identify.Tpo -c -o data-identify.lo data-identify.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT data-identify.lo -MD -MP -MF .deps/data-identify.Tpo -c data-identify.c -o data-identify.o
+mv -f .deps/data-identify.Tpo .deps/data-identify.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT signers.lo -MD -MP -MF .deps/signers.Tpo -c -o signers.lo signers.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT signers.lo -MD -MP -MF .deps/signers.Tpo -c signers.c -o signers.o
+mv -f .deps/signers.Tpo .deps/signers.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT sig-notation.lo -MD -MP -MF .deps/sig-notation.Tpo -c -o sig-notation.lo sig-notation.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT sig-notation.lo -MD -MP -MF .deps/sig-notation.Tpo -c sig-notation.c -o sig-notation.o
+mv -f .deps/sig-notation.Tpo .deps/sig-notation.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT wait.lo -MD -MP -MF .deps/wait.Tpo -c -o wait.lo wait.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT wait.lo -MD -MP -MF .deps/wait.Tpo -c wait.c -o wait.o
+mv -f .deps/wait.Tpo .deps/wait.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT wait-global.lo -MD -MP -MF .deps/wait-global.Tpo -c -o wait-global.lo wait-global.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT wait-global.lo -MD -MP -MF .deps/wait-global.Tpo -c wait-global.c -o wait-global.o
+mv -f .deps/wait-global.Tpo .deps/wait-global.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT wait-private.lo -MD -MP -MF .deps/wait-private.Tpo -c -o wait-private.lo wait-private.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT wait-private.lo -MD -MP -MF .deps/wait-private.Tpo -c wait-private.c -o wait-private.o
+mv -f .deps/wait-private.Tpo .deps/wait-private.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT wait-user.lo -MD -MP -MF .deps/wait-user.Tpo -c -o wait-user.lo wait-user.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT wait-user.lo -MD -MP -MF .deps/wait-user.Tpo -c wait-user.c -o wait-user.o
+mv -f .deps/wait-user.Tpo .deps/wait-user.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT op-support.lo -MD -MP -MF .deps/op-support.Tpo -c -o op-support.lo op-support.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT op-support.lo -MD -MP -MF .deps/op-support.Tpo -c op-support.c -o op-support.o
+mv -f .deps/op-support.Tpo .deps/op-support.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT encrypt.lo -MD -MP -MF .deps/encrypt.Tpo -c -o encrypt.lo encrypt.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT encrypt.lo -MD -MP -MF .deps/encrypt.Tpo -c encrypt.c -o encrypt.o
+mv -f .deps/encrypt.Tpo .deps/encrypt.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT encrypt-sign.lo -MD -MP -MF .deps/encrypt-sign.Tpo -c -o encrypt-sign.lo encrypt-sign.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT encrypt-sign.lo -MD -MP -MF .deps/encrypt-sign.Tpo -c encrypt-sign.c -o encrypt-sign.o
+mv -f .deps/encrypt-sign.Tpo .deps/encrypt-sign.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT decrypt.lo -MD -MP -MF .deps/decrypt.Tpo -c -o decrypt.lo decrypt.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT decrypt.lo -MD -MP -MF .deps/decrypt.Tpo -c decrypt.c -o decrypt.o
+mv -f .deps/decrypt.Tpo .deps/decrypt.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT decrypt-verify.lo -MD -MP -MF .deps/decrypt-verify.Tpo -c -o decrypt-verify.lo decrypt-verify.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT decrypt-verify.lo -MD -MP -MF .deps/decrypt-verify.Tpo -c decrypt-verify.c -o decrypt-verify.o
+mv -f .deps/decrypt-verify.Tpo .deps/decrypt-verify.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT verify.lo -MD -MP -MF .deps/verify.Tpo -c -o verify.lo verify.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT verify.lo -MD -MP -MF .deps/verify.Tpo -c verify.c -o verify.o
+mv -f .deps/verify.Tpo .deps/verify.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT sign.lo -MD -MP -MF .deps/sign.Tpo -c -o sign.lo sign.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT sign.lo -MD -MP -MF .deps/sign.Tpo -c sign.c -o sign.o
+mv -f .deps/sign.Tpo .deps/sign.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT passphrase.lo -MD -MP -MF .deps/passphrase.Tpo -c -o passphrase.lo passphrase.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT passphrase.lo -MD -MP -MF .deps/passphrase.Tpo -c passphrase.c -o passphrase.o
+mv -f .deps/passphrase.Tpo .deps/passphrase.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT progress.lo -MD -MP -MF .deps/progress.Tpo -c -o progress.lo progress.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT progress.lo -MD -MP -MF .deps/progress.Tpo -c progress.c -o progress.o
+mv -f .deps/progress.Tpo .deps/progress.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT key.lo -MD -MP -MF .deps/key.Tpo -c -o key.lo key.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT key.lo -MD -MP -MF .deps/key.Tpo -c key.c -o key.o
+mv -f .deps/key.Tpo .deps/key.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT keylist.lo -MD -MP -MF .deps/keylist.Tpo -c -o keylist.lo keylist.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT keylist.lo -MD -MP -MF .deps/keylist.Tpo -c keylist.c -o keylist.o
+mv -f .deps/keylist.Tpo .deps/keylist.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT trust-item.lo -MD -MP -MF .deps/trust-item.Tpo -c -o trust-item.lo trust-item.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT trust-item.lo -MD -MP -MF .deps/trust-item.Tpo -c trust-item.c -o trust-item.o
+mv -f .deps/trust-item.Tpo .deps/trust-item.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT trustlist.lo -MD -MP -MF .deps/trustlist.Tpo -c -o trustlist.lo trustlist.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT trustlist.lo -MD -MP -MF .deps/trustlist.Tpo -c trustlist.c -o trustlist.o
+mv -f .deps/trustlist.Tpo .deps/trustlist.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT import.lo -MD -MP -MF .deps/import.Tpo -c -o import.lo import.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT import.lo -MD -MP -MF .deps/import.Tpo -c import.c -o import.o
+mv -f .deps/import.Tpo .deps/import.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT export.lo -MD -MP -MF .deps/export.Tpo -c -o export.lo export.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT export.lo -MD -MP -MF .deps/export.Tpo -c export.c -o export.o
+mv -f .deps/export.Tpo .deps/export.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT genkey.lo -MD -MP -MF .deps/genkey.Tpo -c -o genkey.lo genkey.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT genkey.lo -MD -MP -MF .deps/genkey.Tpo -c genkey.c -o genkey.o
+mv -f .deps/genkey.Tpo .deps/genkey.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT delete.lo -MD -MP -MF .deps/delete.Tpo -c -o delete.lo delete.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT delete.lo -MD -MP -MF .deps/delete.Tpo -c delete.c -o delete.o
+mv -f .deps/delete.Tpo .deps/delete.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT edit.lo -MD -MP -MF .deps/edit.Tpo -c -o edit.lo edit.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT edit.lo -MD -MP -MF .deps/edit.Tpo -c edit.c -o edit.o
+mv -f .deps/edit.Tpo .deps/edit.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT getauditlog.lo -MD -MP -MF .deps/getauditlog.Tpo -c -o getauditlog.lo getauditlog.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT getauditlog.lo -MD -MP -MF .deps/getauditlog.Tpo -c getauditlog.c -o getauditlog.o
+mv -f .deps/getauditlog.Tpo .deps/getauditlog.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT opassuan.lo -MD -MP -MF .deps/opassuan.Tpo -c -o opassuan.lo opassuan.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT opassuan.lo -MD -MP -MF .deps/opassuan.Tpo -c opassuan.c -o opassuan.o
+mv -f .deps/opassuan.Tpo .deps/opassuan.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT passwd.lo -MD -MP -MF .deps/passwd.Tpo -c -o passwd.lo passwd.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT passwd.lo -MD -MP -MF .deps/passwd.Tpo -c passwd.c -o passwd.o
+mv -f .deps/passwd.Tpo .deps/passwd.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT engine.lo -MD -MP -MF .deps/engine.Tpo -c -o engine.lo engine.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT engine.lo -MD -MP -MF .deps/engine.Tpo -c engine.c -o engine.o
+mv -f .deps/engine.Tpo .deps/engine.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT engine-gpg.lo -MD -MP -MF .deps/engine-gpg.Tpo -c -o engine-gpg.lo engine-gpg.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT engine-gpg.lo -MD -MP -MF .deps/engine-gpg.Tpo -c engine-gpg.c -o engine-gpg.o
+mv -f .deps/engine-gpg.Tpo .deps/engine-gpg.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT status-table.lo -MD -MP -MF .deps/status-table.Tpo -c -o status-table.lo status-table.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT status-table.lo -MD -MP -MF .deps/status-table.Tpo -c status-table.c -o status-table.o
+mv -f .deps/status-table.Tpo .deps/status-table.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT engine-gpgsm.lo -MD -MP -MF .deps/engine-gpgsm.Tpo -c -o engine-gpgsm.lo engine-gpgsm.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT engine-gpgsm.lo -MD -MP -MF .deps/engine-gpgsm.Tpo -c engine-gpgsm.c -o engine-gpgsm.o
+mv -f .deps/engine-gpgsm.Tpo .deps/engine-gpgsm.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT assuan-support.lo -MD -MP -MF .deps/assuan-support.Tpo -c -o assuan-support.lo assuan-support.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT assuan-support.lo -MD -MP -MF .deps/assuan-support.Tpo -c assuan-support.c -o assuan-support.o
+mv -f .deps/assuan-support.Tpo .deps/assuan-support.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT engine-assuan.lo -MD -MP -MF .deps/engine-assuan.Tpo -c -o engine-assuan.lo engine-assuan.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT engine-assuan.lo -MD -MP -MF .deps/engine-assuan.Tpo -c engine-assuan.c -o engine-assuan.o
+mv -f .deps/engine-assuan.Tpo .deps/engine-assuan.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT engine-gpgconf.lo -MD -MP -MF .deps/engine-gpgconf.Tpo -c -o engine-gpgconf.lo engine-gpgconf.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT engine-gpgconf.lo -MD -MP -MF .deps/engine-gpgconf.Tpo -c engine-gpgconf.c -o engine-gpgconf.o
+mv -f .deps/engine-gpgconf.Tpo .deps/engine-gpgconf.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT engine-g13.lo -MD -MP -MF .deps/engine-g13.Tpo -c -o engine-g13.lo engine-g13.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT engine-g13.lo -MD -MP -MF .deps/engine-g13.Tpo -c engine-g13.c -o engine-g13.o
+mv -f .deps/engine-g13.Tpo .deps/engine-g13.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT vfs-mount.lo -MD -MP -MF .deps/vfs-mount.Tpo -c -o vfs-mount.lo vfs-mount.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT vfs-mount.lo -MD -MP -MF .deps/vfs-mount.Tpo -c vfs-mount.c -o vfs-mount.o
+mv -f .deps/vfs-mount.Tpo .deps/vfs-mount.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT vfs-create.lo -MD -MP -MF .deps/vfs-create.Tpo -c -o vfs-create.lo vfs-create.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT vfs-create.lo -MD -MP -MF .deps/vfs-create.Tpo -c vfs-create.c -o vfs-create.o
+mv -f .deps/vfs-create.Tpo .deps/vfs-create.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT gpgconf.lo -MD -MP -MF .deps/gpgconf.Tpo -c -o gpgconf.lo gpgconf.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT gpgconf.lo -MD -MP -MF .deps/gpgconf.Tpo -c gpgconf.c -o gpgconf.o
+mv -f .deps/gpgconf.Tpo .deps/gpgconf.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT posix-util.lo -MD -MP -MF .deps/posix-util.Tpo -c -o posix-util.lo posix-util.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT posix-util.lo -MD -MP -MF .deps/posix-util.Tpo -c posix-util.c -o posix-util.o
+mv -f .deps/posix-util.Tpo .deps/posix-util.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT posix-sema.lo -MD -MP -MF .deps/posix-sema.Tpo -c -o posix-sema.lo posix-sema.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT posix-sema.lo -MD -MP -MF .deps/posix-sema.Tpo -c posix-sema.c -o posix-sema.o
+mv -f .deps/posix-sema.Tpo .deps/posix-sema.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT posix-io.lo -MD -MP -MF .deps/posix-io.Tpo -c -o posix-io.lo posix-io.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT posix-io.lo -MD -MP -MF .deps/posix-io.Tpo -c posix-io.c -o posix-io.o
+mv -f .deps/posix-io.Tpo .deps/posix-io.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT dirinfo.lo -MD -MP -MF .deps/dirinfo.Tpo -c -o dirinfo.lo dirinfo.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT dirinfo.lo -MD -MP -MF .deps/dirinfo.Tpo -c dirinfo.c -o dirinfo.o
+mv -f .deps/dirinfo.Tpo .deps/dirinfo.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT debug.lo -MD -MP -MF .deps/debug.Tpo -c -o debug.lo debug.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT debug.lo -MD -MP -MF .deps/debug.Tpo -c debug.c -o debug.o
+mv -f .deps/debug.Tpo .deps/debug.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT gpgme.lo -MD -MP -MF .deps/gpgme.Tpo -c -o gpgme.lo gpgme.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT gpgme.lo -MD -MP -MF .deps/gpgme.Tpo -c gpgme.c -o gpgme.o
+mv -f .deps/gpgme.Tpo .deps/gpgme.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT version.lo -MD -MP -MF .deps/version.Tpo -c -o version.lo version.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT version.lo -MD -MP -MF .deps/version.Tpo -c version.c -o version.o
+mv -f .deps/version.Tpo .deps/version.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT error.lo -MD -MP -MF .deps/error.Tpo -c -o error.lo error.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT error.lo -MD -MP -MF .deps/error.Tpo -c error.c -o error.o
+mv -f .deps/error.Tpo .deps/error.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT ath.lo -MD -MP -MF .deps/ath.Tpo -c -o ath.lo ath.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT ath.lo -MD -MP -MF .deps/ath.Tpo -c ath.c -o ath.o
+mv -f .deps/ath.Tpo .deps/ath.Plo
+/bin/bash ../libtool --tag=CC   --mode=link gcc -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -Wl,--version-script=./libgpgme.vers -version-info 22:0:11  -o libgpgme.la -rpath /usr/lib conversion.lo get-env.lo parsetlv.lo data.lo data-fd.lo data-stream.lo data-mem.lo data-user.lo data-compat.lo data-identify.lo signers.lo sig-notation.lo wait.lo wait-global.lo wait-private.lo wait-user.lo op-support.lo encrypt.lo encrypt-sign.lo decrypt.lo decrypt-verify.lo verify.lo sign.lo passphrase.lo progress.lo key.lo keylist.lo trust-item.lo trustlist.lo import.lo export.lo genkey.lo delete.lo edit.lo getauditlog.lo opassuan.lo passwd.lo engine.lo engine-gpg.lo status-table.lo engine-gpgsm.lo assuan-support.lo engine-assuan.lo engine-gpgconf.lo  engine-g13.lo vfs-mount.lo vfs-create.lo gpgconf.lo posix-util.lo posix-sema.lo posix-io.lo  dirinfo.lo debug.lo gpgme.lo version.lo error.lo ath.lo   -lassuan -L/usr/local/lib -lgpg-error  funopen.lo -L/usr/local/lib -lgpg-error 
+libtool: link: rm -fr  .libs/libgpgme.a .libs/libgpgme.la .libs/libgpgme.lai
+libtool: link: ar cru .libs/libgpgme.a  conversion.o get-env.o parsetlv.o data.o data-fd.o data-stream.o data-mem.o data-user.o data-compat.o data-identify.o signers.o sig-notation.o wait.o wait-global.o wait-private.o wait-user.o op-support.o encrypt.o encrypt-sign.o decrypt.o decrypt-verify.o verify.o sign.o passphrase.o progress.o key.o keylist.o trust-item.o trustlist.o import.o export.o genkey.o delete.o edit.o getauditlog.o opassuan.o passwd.o engine.o engine-gpg.o status-table.o engine-gpgsm.o assuan-support.o engine-assuan.o engine-gpgconf.o engine-g13.o vfs-mount.o vfs-create.o gpgconf.o posix-util.o posix-sema.o posix-io.o dirinfo.o debug.o gpgme.o version.o error.o ath.o funopen.o
+libtool: link: ranlib .libs/libgpgme.a
+libtool: link: ( cd ".libs" && rm -f "libgpgme.la" && ln -s "../libgpgme.la" "libgpgme.la" )
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT ath-pthread.lo -MD -MP -MF .deps/ath-pthread.Tpo -c -o ath-pthread.lo ath-pthread.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/local/include -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT ath-pthread.lo -MD -MP -MF .deps/ath-pthread.Tpo -c ath-pthread.c -o ath-pthread.o
+mv -f .deps/ath-pthread.Tpo .deps/ath-pthread.Plo
+/bin/bash ../libtool --tag=CC   --mode=link gcc -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -Wl,--version-script=./libgpgme.vers -version-info 22:0:11  -o libgpgme-pthread.la -rpath /usr/lib conversion.lo get-env.lo parsetlv.lo data.lo data-fd.lo data-stream.lo data-mem.lo data-user.lo data-compat.lo data-identify.lo signers.lo sig-notation.lo wait.lo wait-global.lo wait-private.lo wait-user.lo op-support.lo encrypt.lo encrypt-sign.lo decrypt.lo decrypt-verify.lo verify.lo sign.lo passphrase.lo progress.lo key.lo keylist.lo trust-item.lo trustlist.lo import.lo export.lo genkey.lo delete.lo edit.lo getauditlog.lo opassuan.lo passwd.lo engine.lo engine-gpg.lo status-table.lo engine-gpgsm.lo assuan-support.lo engine-assuan.lo engine-gpgconf.lo  engine-g13.lo vfs-mount.lo vfs-create.lo gpgconf.lo posix-util.lo posix-sema.lo posix-io.lo  dirinfo.lo debug.lo gpgme.lo version.lo error.lo ath-pthread.lo   -lassuan -L/usr/local/lib -lgpg-error  funopen.lo -lpthread -L/usr/local/lib -lgpg-error 
+libtool: link: rm -fr  .libs/libgpgme-pthread.a .libs/libgpgme-pthread.la .libs/libgpgme-pthread.lai
+libtool: link: ar cru .libs/libgpgme-pthread.a  conversion.o get-env.o parsetlv.o data.o data-fd.o data-stream.o data-mem.o data-user.o data-compat.o data-identify.o signers.o sig-notation.o wait.o wait-global.o wait-private.o wait-user.o op-support.o encrypt.o encrypt-sign.o decrypt.o decrypt-verify.o verify.o sign.o passphrase.o progress.o key.o keylist.o trust-item.o trustlist.o import.o export.o genkey.o delete.o edit.o getauditlog.o opassuan.o passwd.o engine.o engine-gpg.o status-table.o engine-gpgsm.o assuan-support.o engine-assuan.o engine-gpgconf.o engine-g13.o vfs-mount.o vfs-create.o gpgconf.o posix-util.o posix-sema.o posix-io.o dirinfo.o debug.o gpgme.o version.o error.o ath-pthread.o funopen.o
+libtool: link: ranlib .libs/libgpgme-pthread.a
+libtool: link: ( cd ".libs" && rm -f "libgpgme-pthread.la" && ln -s "../libgpgme-pthread.la" "libgpgme-pthread.la" )
+gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/include   -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT gpgme-tool.o -MD -MP -MF .deps/gpgme-tool.Tpo -c -o gpgme-tool.o gpgme-tool.c
+mv -f .deps/gpgme-tool.Tpo .deps/gpgme-tool.Po
+/bin/bash ../libtool --tag=CC   --mode=link gcc -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o gpgme-tool gpgme-tool.o libgpgme.la -lassuan -L/usr/local/lib -lgpg-error 
+libtool: link: gcc -I/usr/local/include -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o gpgme-tool gpgme-tool.o  ./.libs/libgpgme.a -L/usr/local/lib /usr/local/lib/libassuan.so /usr/local/lib/libgpg-error.so
+make[2]: Leaving directory `/home/dmitriy/Documents/work/gpgme-1.4.3/src'
+Making all in tests
+make[2]: Entering directory `/home/dmitriy/Documents/work/gpgme-1.4.3/tests'
+Making all in gpg
+make[3]: Entering directory `/home/dmitriy/Documents/work/gpgme-1.4.3/tests/gpg'
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-encrypt.o -MD -MP -MF .deps/t-encrypt.Tpo -c -o t-encrypt.o t-encrypt.c
+mv -f .deps/t-encrypt.Tpo .deps/t-encrypt.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-encrypt t-encrypt.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-encrypt t-encrypt.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-encrypt-sym.o -MD -MP -MF .deps/t-encrypt-sym.Tpo -c -o t-encrypt-sym.o t-encrypt-sym.c
+mv -f .deps/t-encrypt-sym.Tpo .deps/t-encrypt-sym.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-encrypt-sym t-encrypt-sym.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-encrypt-sym t-encrypt-sym.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-encrypt-sign.o -MD -MP -MF .deps/t-encrypt-sign.Tpo -c -o t-encrypt-sign.o t-encrypt-sign.c
+mv -f .deps/t-encrypt-sign.Tpo .deps/t-encrypt-sign.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-encrypt-sign t-encrypt-sign.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-encrypt-sign t-encrypt-sign.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-sign.o -MD -MP -MF .deps/t-sign.Tpo -c -o t-sign.o t-sign.c
+mv -f .deps/t-sign.Tpo .deps/t-sign.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-sign t-sign.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-sign t-sign.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-signers.o -MD -MP -MF .deps/t-signers.Tpo -c -o t-signers.o t-signers.c
+mv -f .deps/t-signers.Tpo .deps/t-signers.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-signers t-signers.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-signers t-signers.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-decrypt.o -MD -MP -MF .deps/t-decrypt.Tpo -c -o t-decrypt.o t-decrypt.c
+mv -f .deps/t-decrypt.Tpo .deps/t-decrypt.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-decrypt t-decrypt.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-decrypt t-decrypt.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-verify.o -MD -MP -MF .deps/t-verify.Tpo -c -o t-verify.o t-verify.c
+mv -f .deps/t-verify.Tpo .deps/t-verify.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-verify t-verify.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-verify t-verify.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-decrypt-verify.o -MD -MP -MF .deps/t-decrypt-verify.Tpo -c -o t-decrypt-verify.o t-decrypt-verify.c
+mv -f .deps/t-decrypt-verify.Tpo .deps/t-decrypt-verify.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-decrypt-verify t-decrypt-verify.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-decrypt-verify t-decrypt-verify.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-sig-notation.o -MD -MP -MF .deps/t-sig-notation.Tpo -c -o t-sig-notation.o t-sig-notation.c
+mv -f .deps/t-sig-notation.Tpo .deps/t-sig-notation.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-sig-notation t-sig-notation.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-sig-notation t-sig-notation.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-export.o -MD -MP -MF .deps/t-export.Tpo -c -o t-export.o t-export.c
+mv -f .deps/t-export.Tpo .deps/t-export.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-export t-export.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-export t-export.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-import.o -MD -MP -MF .deps/t-import.Tpo -c -o t-import.o t-import.c
+mv -f .deps/t-import.Tpo .deps/t-import.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-import t-import.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-import t-import.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-trustlist.o -MD -MP -MF .deps/t-trustlist.Tpo -c -o t-trustlist.o t-trustlist.c
+mv -f .deps/t-trustlist.Tpo .deps/t-trustlist.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-trustlist t-trustlist.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-trustlist t-trustlist.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-edit.o -MD -MP -MF .deps/t-edit.Tpo -c -o t-edit.o t-edit.c
+mv -f .deps/t-edit.Tpo .deps/t-edit.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-edit t-edit.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-edit t-edit.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-keylist.o -MD -MP -MF .deps/t-keylist.Tpo -c -o t-keylist.o t-keylist.c
+mv -f .deps/t-keylist.Tpo .deps/t-keylist.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-keylist t-keylist.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-keylist t-keylist.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-keylist-sig.o -MD -MP -MF .deps/t-keylist-sig.Tpo -c -o t-keylist-sig.o t-keylist-sig.c
+mv -f .deps/t-keylist-sig.Tpo .deps/t-keylist-sig.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-keylist-sig t-keylist-sig.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-keylist-sig t-keylist-sig.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-wait.o -MD -MP -MF .deps/t-wait.Tpo -c -o t-wait.o t-wait.c
+mv -f .deps/t-wait.Tpo .deps/t-wait.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-wait t-wait.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-wait t-wait.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-encrypt-large.o -MD -MP -MF .deps/t-encrypt-large.Tpo -c -o t-encrypt-large.o t-encrypt-large.c
+mv -f .deps/t-encrypt-large.Tpo .deps/t-encrypt-large.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-encrypt-large t-encrypt-large.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-encrypt-large t-encrypt-large.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-file-name.o -MD -MP -MF .deps/t-file-name.Tpo -c -o t-file-name.o t-file-name.c
+mv -f .deps/t-file-name.Tpo .deps/t-file-name.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-file-name t-file-name.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-file-name t-file-name.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-gpgconf.o -MD -MP -MF .deps/t-gpgconf.Tpo -c -o t-gpgconf.o t-gpgconf.c
+mv -f .deps/t-gpgconf.Tpo .deps/t-gpgconf.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-gpgconf t-gpgconf.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-gpgconf t-gpgconf.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-eventloop.o -MD -MP -MF .deps/t-eventloop.Tpo -c -o t-eventloop.o t-eventloop.c
+mv -f .deps/t-eventloop.Tpo .deps/t-eventloop.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-eventloop t-eventloop.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-eventloop t-eventloop.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-thread1.o -MD -MP -MF .deps/t-thread1.Tpo -c -o t-thread1.o t-thread1.c
+mv -f .deps/t-thread1.Tpo .deps/t-thread1.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-thread1 t-thread1.o ../../src/libgpgme-pthread.la -lpthread 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-thread1 t-thread1.o  ../../src/.libs/libgpgme-pthread.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so -lpthread
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-genkey.o -MD -MP -MF .deps/t-genkey.Tpo -c -o t-genkey.o t-genkey.c
+mv -f .deps/t-genkey.Tpo .deps/t-genkey.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-genkey t-genkey.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-genkey t-genkey.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+make[3]: Leaving directory `/home/dmitriy/Documents/work/gpgme-1.4.3/tests/gpg'
+Making all in gpgsm
+make[3]: Entering directory `/home/dmitriy/Documents/work/gpgme-1.4.3/tests/gpgsm'
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-import.o -MD -MP -MF .deps/t-import.Tpo -c -o t-import.o t-import.c
+mv -f .deps/t-import.Tpo .deps/t-import.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-import t-import.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-import t-import.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-keylist.o -MD -MP -MF .deps/t-keylist.Tpo -c -o t-keylist.o t-keylist.c
+mv -f .deps/t-keylist.Tpo .deps/t-keylist.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-keylist t-keylist.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-keylist t-keylist.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-encrypt.o -MD -MP -MF .deps/t-encrypt.Tpo -c -o t-encrypt.o t-encrypt.c
+mv -f .deps/t-encrypt.Tpo .deps/t-encrypt.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-encrypt t-encrypt.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-encrypt t-encrypt.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-verify.o -MD -MP -MF .deps/t-verify.Tpo -c -o t-verify.o t-verify.c
+mv -f .deps/t-verify.Tpo .deps/t-verify.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-verify t-verify.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-verify t-verify.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-decrypt.o -MD -MP -MF .deps/t-decrypt.Tpo -c -o t-decrypt.o t-decrypt.c
+mv -f .deps/t-decrypt.Tpo .deps/t-decrypt.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-decrypt t-decrypt.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-decrypt t-decrypt.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-sign.o -MD -MP -MF .deps/t-sign.Tpo -c -o t-sign.o t-sign.c
+mv -f .deps/t-sign.Tpo .deps/t-sign.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-sign t-sign.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-sign t-sign.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-export.o -MD -MP -MF .deps/t-export.Tpo -c -o t-export.o t-export.c
+mv -f .deps/t-export.Tpo .deps/t-export.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-export t-export.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-export t-export.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-genkey.o -MD -MP -MF .deps/t-genkey.Tpo -c -o t-genkey.o t-genkey.c
+mv -f .deps/t-genkey.Tpo .deps/t-genkey.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-genkey t-genkey.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-genkey t-genkey.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT cms-keylist.o -MD -MP -MF .deps/cms-keylist.Tpo -c -o cms-keylist.o cms-keylist.c
+mv -f .deps/cms-keylist.Tpo .deps/cms-keylist.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o cms-keylist cms-keylist.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o cms-keylist cms-keylist.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT cms-decrypt.o -MD -MP -MF .deps/cms-decrypt.Tpo -c -o cms-decrypt.o cms-decrypt.c
+mv -f .deps/cms-decrypt.Tpo .deps/cms-decrypt.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o cms-decrypt cms-decrypt.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o cms-decrypt cms-decrypt.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+make[3]: Leaving directory `/home/dmitriy/Documents/work/gpgme-1.4.3/tests/gpgsm'
+Making all in opassuan
+make[3]: Entering directory `/home/dmitriy/Documents/work/gpgme-1.4.3/tests/opassuan'
+gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-command.o -MD -MP -MF .deps/t-command.Tpo -c -o t-command.o t-command.c
+mv -f .deps/t-command.Tpo .deps/t-command.Po
+/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-command t-command.o ../../src/libgpgme.la 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-command t-command.o  ../../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+make[3]: Leaving directory `/home/dmitriy/Documents/work/gpgme-1.4.3/tests/opassuan'
+make[3]: Entering directory `/home/dmitriy/Documents/work/gpgme-1.4.3/tests'
+gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-version.o -MD -MP -MF .deps/t-version.Tpo -c -o t-version.o t-version.c
+mv -f .deps/t-version.Tpo .deps/t-version.Po
+/bin/bash ../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-version t-version.o ../src/libgpgme.la -L/usr/local/lib -lgpg-error 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-version t-version.o  ../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-data.o -MD -MP -MF .deps/t-data.Tpo -c -o t-data.o t-data.c
+mv -f .deps/t-data.Tpo .deps/t-data.Po
+/bin/bash ../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-data t-data.o ../src/libgpgme.la -L/usr/local/lib -lgpg-error 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-data t-data.o  ../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT t-engine-info.o -MD -MP -MF .deps/t-engine-info.Tpo -c -o t-engine-info.o t-engine-info.c
+mv -f .deps/t-engine-info.Tpo .deps/t-engine-info.Po
+/bin/bash ../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o t-engine-info t-engine-info.o ../src/libgpgme.la -L/usr/local/lib -lgpg-error 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-engine-info t-engine-info.o  ../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT run-keylist.o -MD -MP -MF .deps/run-keylist.Tpo -c -o run-keylist.o run-keylist.c
+mv -f .deps/run-keylist.Tpo .deps/run-keylist.Po
+/bin/bash ../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o run-keylist run-keylist.o ../src/libgpgme.la -L/usr/local/lib -lgpg-error 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o run-keylist run-keylist.o  ../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT run-export.o -MD -MP -MF .deps/run-export.Tpo -c -o run-export.o run-export.c
+mv -f .deps/run-export.Tpo .deps/run-export.Po
+/bin/bash ../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o run-export run-export.o ../src/libgpgme.la -L/usr/local/lib -lgpg-error 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o run-export run-export.o  ../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT run-import.o -MD -MP -MF .deps/run-import.Tpo -c -o run-import.o run-import.c
+mv -f .deps/run-import.Tpo .deps/run-import.Po
+/bin/bash ../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o run-import run-import.o ../src/libgpgme.la -L/usr/local/lib -lgpg-error 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o run-import run-import.o  ../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT run-sign.o -MD -MP -MF .deps/run-sign.Tpo -c -o run-sign.o run-sign.c
+mv -f .deps/run-sign.Tpo .deps/run-sign.Po
+/bin/bash ../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o run-sign run-sign.o ../src/libgpgme.la -L/usr/local/lib -lgpg-error 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o run-sign run-sign.o  ../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/usr/local/include   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT run-verify.o -MD -MP -MF .deps/run-verify.Tpo -c -o run-verify.o run-verify.c
+mv -f .deps/run-verify.Tpo .deps/run-verify.Po
+/bin/bash ../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes   -o run-verify run-verify.o ../src/libgpgme.la -L/usr/local/lib -lgpg-error 
+libtool: link: gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o run-verify run-verify.o  ../src/.libs/libgpgme.a /usr/local/lib/libassuan.so -L/usr/local/lib /usr/local/lib/libgpg-error.so
+make[3]: Leaving directory `/home/dmitriy/Documents/work/gpgme-1.4.3/tests'
+make[2]: Leaving directory `/home/dmitriy/Documents/work/gpgme-1.4.3/tests'
+Making all in doc
+make[2]: Entering directory `/home/dmitriy/Documents/work/gpgme-1.4.3/doc'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/dmitriy/Documents/work/gpgme-1.4.3/doc'
+Making all in lang
+make[2]: Entering directory `/home/dmitriy/Documents/work/gpgme-1.4.3/lang'
+Making all in cl
+make[3]: Entering directory `/home/dmitriy/Documents/work/gpgme-1.4.3/lang/cl'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/dmitriy/Documents/work/gpgme-1.4.3/lang/cl'
+make[3]: Entering directory `/home/dmitriy/Documents/work/gpgme-1.4.3/lang'
+make[3]: Nothing to be done for `all-am'.
+make[3]: Leaving directory `/home/dmitriy/Documents/work/gpgme-1.4.3/lang'
+make[2]: Leaving directory `/home/dmitriy/Documents/work/gpgme-1.4.3/lang'
+make[2]: Entering directory `/home/dmitriy/Documents/work/gpgme-1.4.3'
+make[2]: Leaving directory `/home/dmitriy/Documents/work/gpgme-1.4.3'
+make[1]: Leaving directory `/home/dmitriy/Documents/work/gpgme-1.4.3'
