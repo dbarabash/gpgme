@@ -2107,6 +2107,10 @@ gpgme_error_t gpgme_set_engine_info (gpgme_protocol_t proto,
 				     const char *file_name,
 				     const char *home_dir);
 
+/* Defines the keyserver for all keyserver-related operations. */
+gpgme_error_t
+gpgme_set_keyserver (gpgme_ctx_t ctx, const char *keyserver);
+
 
 /* Engine support functions.  */
 
