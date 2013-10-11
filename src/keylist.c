@@ -884,7 +884,7 @@ gpgme_op_keylist_start (gpgme_ctx_t ctx, const char *pattern, int secret_only)
     return TRACE_ERR (err);
 
   err = _gpgme_engine_op_keylist (ctx->engine, pattern, secret_only,
-				  ctx->keylist_mode);
+				  ctx->keylist_mode, ctx->keyserver);
   return TRACE_ERR (err);
 }
 
@@ -923,7 +923,7 @@ gpgme_op_keylist_ext_start (gpgme_ctx_t ctx, const char *pattern[],
     return TRACE_ERR (err);
 
   err = _gpgme_engine_op_keylist_ext (ctx->engine, pattern, secret_only,
-				      reserved, ctx->keylist_mode);
+				      reserved, ctx->keylist_mode, ctx->keyserver);
   return TRACE_ERR (err);
 }
 

@@ -45,7 +45,7 @@ BEGIN
             VALUE "PrivateBuild", "\0"
             VALUE "ProductName", "GPGME\0"
             VALUE "ProductVersion", "1.4.3\0"
-            VALUE "SpecialBuild", "2013-09-18T15:04+0000\0"
+            VALUE "SpecialBuild", "2013-10-11T09:20+0000\0"
         END
     END
 END

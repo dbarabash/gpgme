@@ -231,6 +231,8 @@ gpgme_release (gpgme_ctx_t ctx)
   if (ctx->lc_messages)
     free (ctx->lc_messages);
   _gpgme_engine_info_release (ctx->engine_info);
+  if (ctx->keyserver)
+    free (ctx->keyserver);
   DESTROY_LOCK (ctx->lock);
   free (ctx);
 }
@@ -441,6 +443,42 @@ gpgme_set_textmode (gpgme_ctx_t ctx, int use_textmode)
     return;
 
   ctx->use_textmode = use_textmode;
+}
+
+/* Defines the keyserver for all keyserver-related operations. */
+gpgme_error_t
+gpgme_set_keyserver (gpgme_ctx_t ctx, const char *keyserver)
+{
+  TRACE_BEG1 (DEBUG_CTX, "gpgme_set_keyserver", ctx, "keyserver=\"%s\"",
+	  keyserver);
+
+  if (!ctx)
+    return gpg_error (GPG_ERR_INV_VALUE);
+
+  char *keyserver_save = ctx->keyserver;
+
+  // FIXME: Add some checks before setting the keyserver ? (e.g. it is a valid
+  // keyserver, online, pingable... or even a valid url ?)
+  ctx->keyserver = strdup (keyserver);
+
+  if (!ctx->keyserver)
+    {
+      ctx->keyserver = keyserver_save;
+      return TRACE_ERR (gpg_error_from_errno (errno));
+    }
+
+  if (keyserver_save)
+    free (keyserver_save);
+  return 0;
+}
+
+/* Return the keyserver in use. Its content should *not* be modified. */
+const char *
+gpgme_get_keyserver (gpgme_ctx_t ctx)
+{
+  TRACE1 (DEBUG_CTX, "gpgme_get_armor", ctx, "ctx->keyserver=\"%s\"",
+	  ctx->keyserver);
+  return ctx->keyserver;
 }
 
 /* Return the state of the textmode flag.  */

@@ -136,6 +136,9 @@ struct gpgme_context
      operation.  */
   struct fd_table fdt;
   struct gpgme_io_cbs io_cbs;
+
+  /* The keyserver in use for the context. */
+  char *keyserver;
 };
 
 #endif	/* CONTEXT_H */

@@ -1267,7 +1267,7 @@ gpgsm_encrypt (void *engine, gpgme_key_t recp[], gpgme_encrypt_flags_t flags,
 
 static gpgme_error_t
 gpgsm_export (void *engine, const char *pattern, gpgme_export_mode_t mode,
-	      gpgme_data_t keydata, int use_armor)
+	      gpgme_data_t keydata, int use_armor, const char *keyserver)
 {
   engine_gpgsm_t gpgsm = engine;
   gpgme_error_t err = 0;
@@ -1305,7 +1305,7 @@ gpgsm_export (void *engine, const char *pattern, gpgme_export_mode_t mode,
 
 static gpgme_error_t
 gpgsm_export_ext (void *engine, const char *pattern[], gpgme_export_mode_t mode,
-		  gpgme_data_t keydata, int use_armor)
+		  gpgme_data_t keydata, int use_armor, const char *keyserver)
 {
   engine_gpgsm_t gpgsm = engine;
   gpgme_error_t err = 0;
@@ -1529,7 +1529,7 @@ gpgsm_import (void *engine, gpgme_data_t keydata, gpgme_key_t *keyarray)
 
 static gpgme_error_t
 gpgsm_keylist (void *engine, const char *pattern, int secret_only,
-	       gpgme_keylist_mode_t mode)
+	       gpgme_keylist_mode_t mode, const char *keyserver)
 {
   engine_gpgsm_t gpgsm = engine;
   char *line;
@@ -1611,7 +1611,7 @@ gpgsm_keylist (void *engine, const char *pattern, int secret_only,
 
 static gpgme_error_t
 gpgsm_keylist_ext (void *engine, const char *pattern[], int secret_only,
-		   int reserved, gpgme_keylist_mode_t mode)
+		   int reserved, gpgme_keylist_mode_t mode, const char *keyserver)
 {
   engine_gpgsm_t gpgsm = engine;
   char *line;

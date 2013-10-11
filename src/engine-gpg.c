@@ -1757,7 +1757,7 @@ gpg_encrypt_sign (void *engine, gpgme_key_t recp[],
 
 static gpgme_error_t
 export_common (engine_gpg_t gpg, gpgme_export_mode_t mode,
-               gpgme_data_t keydata, int use_armor, int secret)
+               gpgme_data_t keydata, int use_armor, int secret, const char *keyserver)
 {
   gpgme_error_t err = 0;
 
@@ -1782,6 +1782,12 @@ export_common (engine_gpg_t gpg, gpgme_export_mode_t mode,
         err = add_arg (gpg, "--export");
       if (!err && use_armor)
         err = add_arg (gpg, "--armor");
+      if (!err && keyserver)
+        {
+          err = add_arg (gpg, "--keyserver");
+          if (!err)
+            err = add_arg (gpg, keyserver);
+        }
       if (!err)
         err = add_data (gpg, keydata, 1, 1);
     }
@@ -1794,12 +1800,12 @@ export_common (engine_gpg_t gpg, gpgme_export_mode_t mode,
 
 static gpgme_error_t
 gpg_export (void *engine, const char *pattern, gpgme_export_mode_t mode,
-	    gpgme_data_t keydata, int use_armor, int secret)
+	    gpgme_data_t keydata, int use_armor, int secret, const char *keyserver)
 {
   engine_gpg_t gpg = engine;
   gpgme_error_t err;
 
-  err = export_common (gpg, mode, keydata, use_armor, secret);
+  err = export_common (gpg, mode, keydata, use_armor, secret, keyserver);
 
   if (!err && pattern && *pattern)
     err = add_arg (gpg, pattern);
@@ -1813,12 +1819,12 @@ gpg_export (void *engine, const char *pattern, gpgme_export_mode_t mode,
 
 static gpgme_error_t
 gpg_export_ext (void *engine, const char *pattern[], gpgme_export_mode_t mode,
-		gpgme_data_t keydata, int use_armor)
+		gpgme_data_t keydata, int use_armor, const char *keyserver)
 {
   engine_gpg_t gpg = engine;
   gpgme_error_t err;
 
-  err = export_common (gpg, mode, keydata, use_armor, 0);
+  err = export_common (gpg, mode, keydata, use_armor, 0, keyserver);
 
   if (pattern)
     {
@@ -2170,7 +2176,7 @@ gpg_keylist_preprocess (char *line, char **r_line)
 
 static gpg_error_t
 gpg_keylist_build_options (engine_gpg_t gpg, int secret_only,
-                           gpgme_keylist_mode_t mode)
+                           gpgme_keylist_mode_t mode, const char *keyserver)
 {
   gpg_error_t err;
 
@@ -2212,6 +2218,12 @@ gpg_keylist_build_options (engine_gpg_t gpg, int secret_only,
               err = add_arg (gpg, "--search-keys");
               gpg->colon.preprocess_fnc = gpg_keylist_preprocess;
             }
+          if (!err && keyserver)
+            {
+              err = add_arg (gpg, "--keyserver");
+              if (!err)
+                err = add_arg (gpg, keyserver);
+            }
 	}
       else
         {
@@ -2229,12 +2241,12 @@ gpg_keylist_build_options (engine_gpg_t gpg, int secret_only,
 
 static gpgme_error_t
 gpg_keylist (void *engine, const char *pattern, int secret_only,
-	     gpgme_keylist_mode_t mode)
+	     gpgme_keylist_mode_t mode, const char *keyserver)
 {
   engine_gpg_t gpg = engine;
   gpgme_error_t err;
 
-  err = gpg_keylist_build_options (gpg, secret_only, mode);
+  err = gpg_keylist_build_options (gpg, secret_only, mode, keyserver);
 
   if (!err && pattern && *pattern)
     err = add_arg (gpg, pattern);
@@ -2248,7 +2260,7 @@ gpg_keylist (void *engine, const char *pattern, int secret_only,
 
 static gpgme_error_t
 gpg_keylist_ext (void *engine, const char *pattern[], int secret_only,
-		 int reserved, gpgme_keylist_mode_t mode)
+		 int reserved, gpgme_keylist_mode_t mode, const char *keyserver)
 {
   engine_gpg_t gpg = engine;
   gpgme_error_t err;
@@ -2256,7 +2268,7 @@ gpg_keylist_ext (void *engine, const char *pattern[], int secret_only,
   if (reserved)
     return gpg_error (GPG_ERR_INV_VALUE);
 
-  err = gpg_keylist_build_options (gpg, secret_only, mode);
+  err = gpg_keylist_build_options (gpg, secret_only, mode, keyserver);
 
   if (pattern)
     {

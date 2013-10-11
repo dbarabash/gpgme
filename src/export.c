@@ -67,7 +67,7 @@ export_start (gpgme_ctx_t ctx, int synchronous, const char *pattern,
   _gpgme_engine_set_status_handler (ctx->engine, export_status_handler, ctx);
 
   return _gpgme_engine_op_export (ctx->engine, pattern, mode, keydata,
-				  ctx->use_armor, secret);
+				  ctx->use_armor, secret, ctx->keyserver);
 }
 
 
@@ -137,7 +137,7 @@ export_ext_start (gpgme_ctx_t ctx, int synchronous, const char *pattern[],
   _gpgme_engine_set_status_handler (ctx->engine, export_status_handler, ctx);
 
   return _gpgme_engine_op_export_ext (ctx->engine, pattern, mode, keydata,
-				      ctx->use_armor);
+				      ctx->use_armor, ctx->keyserver);
 }
 
 
