@@ -213,5 +213,6 @@ EXPORTS
 
     gpgme_data_identify                   @161
 
+    gpgme_set_keyserver                   @162
 ; END
 
